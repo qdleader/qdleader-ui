@@ -1,5 +1,8 @@
 ## vue3 的 UI 库
 
+## 预览地址
+[在线地址](https://qdleader.github.io/qdleader-ui)
+:https://qdleader.github.io/qdleader-ui
 ## 安装
 
 ```
