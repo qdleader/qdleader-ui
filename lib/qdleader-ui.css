@@ -34,78 +34,6 @@
   display: block;
 }
 
-.gulu-switch {
-  height: 22px;
-  width: 44px;
-  border: none;
-  border-radius: 11px;
-  position: relative;
-  background-color: #DCDFE6;
-  transition: all 250ms;
-}
-.gulu-switch .slider {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  height: 18px;
-  width: 18px;
-  border-radius: 18px;
-  background-color: #fff;
-  transition: all 250ms;
-}
-.gulu-switch.gulu-checked {
-  background-color: #409eff;
-}
-.gulu-switch.gulu-checked .slider {
-  left: calc(100% - 20px);
-}
-.gulu-switch.gulu-checked:active > span {
-  margin-left: -10px;
-}
-.gulu-switch:focus {
-  outline: none;
-}
-.gulu-switch:active > .slider {
-  width: 22px;
-  margin-left: 10px;
-}
-
-.gulu-switch-king {
-  z-index: 0;
-  position: relative;
-  border: none;
-  background-color: #102131;
-  border-radius: 4px;
-  padding: 6px 5px;
-}
-.gulu-switch-king .gulu-switch-king-item {
-  padding: 6px 5px;
-  color: #677991;
-}
-.gulu-switch-king .gulu-switch-king-item.gulu-item-checked {
-  color: #EEFEFF;
-}
-.gulu-switch-king.gulu-checked > .slider {
-  background-color: red;
-  left: calc(50%);
-}
-.gulu-switch-king .slider {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #EEFEFF;
-  height: 100%;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #73B2DF;
-  border-radius: 4px;
-  background: linear-gradient(180deg, #19588b 0%, #2671b2 66%);
-  transition: all 250ms;
-}
-
 .gulu-button {
   box-sizing: border-box;
   height: 32px;
@@ -249,6 +177,43 @@
   color: #909399;
   cursor: not-allowed;
 }
+.gulu-button.gulu-theme-3d {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: inset 0 -1px 3px rgba(255, 255, 255, 0.5), 0 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 -1px 3px rgba(255, 255, 255, 0.5), 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px 3px rgba(255, 255, 255, 0.5), 0 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid;
+  padding: 8px 12px;
+  color: #fff;
+  font-family: "Myriad Pro", Arial, Tahoma, sans-serif;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.1), 0 0 15px rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  background: #777;
+  border-color: #777;
+  text-decoration: none;
+  font-style: normal;
+  text-transform: none;
+  position: relative;
+}
+.gulu-button.gulu-theme-3d:hover, .gulu-button.gulu-theme-3d:focus {
+  bottom: 1px;
+  -moz-box-shadow: inset 0 -1px 3px rgba(255, 255, 255, 0.5), 0 3px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 -1px 3px rgba(255, 255, 255, 0.5), 0 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px 3px rgba(255, 255, 255, 0.5), 0 3px 2px rgba(0, 0, 0, 0.2);
+  background: #999;
+  border-color: #999;
+  /* Default color */
+}
+.gulu-button.gulu-theme-3d:active {
+  top: 1px;
+  -moz-box-shadow: inset 0 -1px 3px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 -1px 3px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px 3px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
 .gulu-button > .gulu-loadingIndicator {
   width: 10px;
   height: 10px;
@@ -339,4 +304,76 @@
   border-top: 1px solid #d9d9d9;
   padding: 12px 16px;
   text-align: right;
+}
+
+.gulu-switch {
+  height: 22px;
+  width: 44px;
+  border: none;
+  border-radius: 11px;
+  position: relative;
+  background-color: #DCDFE6;
+  transition: all 250ms;
+}
+.gulu-switch .slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  background-color: #fff;
+  transition: all 250ms;
+}
+.gulu-switch.gulu-checked {
+  background-color: #409eff;
+}
+.gulu-switch.gulu-checked .slider {
+  left: calc(100% - 20px);
+}
+.gulu-switch.gulu-checked:active > span {
+  margin-left: -10px;
+}
+.gulu-switch:focus {
+  outline: none;
+}
+.gulu-switch:active > .slider {
+  width: 22px;
+  margin-left: 10px;
+}
+
+.gulu-switch-king {
+  z-index: 0;
+  position: relative;
+  border: none;
+  background-color: #102131;
+  border-radius: 4px;
+  padding: 6px 5px;
+}
+.gulu-switch-king .gulu-switch-king-item {
+  padding: 6px 5px;
+  color: #677991;
+}
+.gulu-switch-king .gulu-switch-king-item.gulu-item-checked {
+  color: #EEFEFF;
+}
+.gulu-switch-king.gulu-checked > .slider {
+  background-color: red;
+  left: calc(50%);
+}
+.gulu-switch-king .slider {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #EEFEFF;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #73B2DF;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #19588b 0%, #2671b2 66%);
+  transition: all 250ms;
 }
